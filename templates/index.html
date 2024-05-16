@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Döviz Çevirici</title>
+    <title>Currency Converter</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 <body>
     
-    <body class = "bg-primary">
+    <body class = "bg-warning">
     
             <div class="container">
         
@@ -106,16 +106,16 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="number" class="form-control" name = "amount" placeholder="Miktar" min="0" required>
+                                <input type="number" class="form-control" name = "amount" placeholder="Amount" min="0" required>
                             </div>
                             <div class="form-group">
-                                <input id ="submitbtn" type="submit" value = "Hesapla" class = "btn btn-danger">
+                                <input id ="submitbtn" type="submit" value = "Submit" class = "btn btn-danger">
                             </div>
                         </form>
                         
                         {% if data %}
                         <div id="results" class = "pt-4">
-                            <h5>Sonuçlar</h5>
+                            <h5>Results</h5>
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-text">{{data.amount}} {{data.firstCurrency}}</span>
